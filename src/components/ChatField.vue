@@ -16,6 +16,8 @@ import ChatFieldMessage from "./ChatFieldMessage.vue";
 
 <style lang="scss" scoped>
 .chat {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   height: calc(100vh - $height-nav - $height-bottom);
   width: 100%;

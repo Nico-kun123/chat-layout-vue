@@ -9,8 +9,3 @@ import InputField from "./components/InputField.vue";
   <ChatField />
   <InputField />
 </template>
-
-<style scoped>
-@media (min-width: 1024px) {
-}
-</style>

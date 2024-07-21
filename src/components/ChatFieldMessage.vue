@@ -1,5 +1,3 @@
-<script setup></script>
-
 <template>
   <div class="chat__messages">
     <div class="chat__messages__list">
@@ -61,12 +59,15 @@
 
   &__list {
     margin: 0;
-    // padding: 2em 1em;
     list-style: none;
+    -webkit-transition: $ui-transition;
+    -o-transition: $ui-transition;
     transition: $ui-transition;
 
     &__item {
       position: relative;
+      width: -webkit-fit-content;
+      width: -moz-fit-content;
       width: fit-content;
       max-width: 350px;
       margin-bottom: 1em;
@@ -74,10 +75,16 @@
       background-color: $ui-color-3;
       border-radius: 0.5em;
       text-rendering: optimizeLegibility;
+      -webkit-transition: $ui-transition;
+      -o-transition: $ui-transition;
       transition: $ui-transition;
 
       &_wrap {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
         margin-bottom: 0.5em;
       }
@@ -101,6 +108,8 @@
         margin-top: 0.5em;
         margin-bottom: 0.5em;
         border-radius: 0.5em;
+        -webkit-transition: $ui-transition;
+        -o-transition: $ui-transition;
         transition: $ui-transition;
 
         img {

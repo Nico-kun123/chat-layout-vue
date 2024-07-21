@@ -11,6 +11,8 @@ nav {
   height: $height-nav;
   padding: 0.4em 1em;
 
+  -webkit-box-shadow: 0 0 1em 0.2em black;
+
   box-shadow: 0 0 1em 0.2em black;
 }
 </style>

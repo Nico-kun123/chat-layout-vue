@@ -1,12 +1,14 @@
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* Общие стили */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
 *,
 *::before,
 *::after {
   font-family: "Opens Sans", sans-serif;
   font-weight: normal;
   line-height: 1.5;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin: 0;
 }
@@ -25,6 +27,8 @@ body {
   min-height: 100vh;
   background-color: $ui-color-4;
   overflow: hidden;
+  -webkit-transition: color 0.5s, background-color 0.5s;
+  -o-transition: color 0.5s, background-color 0.5s;
   transition: color 0.5s, background-color 0.5s;
 }
 

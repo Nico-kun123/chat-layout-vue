@@ -1,4 +1,3 @@
-<script setup></script>
 <template>
   <div class="chat__users__user">
     <img
@@ -13,7 +12,11 @@
 </template>
 <style lang="scss" scoped>
 .chat__users__user {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   padding: 0.5em 1em;
   cursor: pointer;
@@ -27,6 +30,8 @@
 
   &:hover {
     background-color: $ui-color-3;
+    -webkit-transition: $hover-transition;
+    -o-transition: $hover-transition;
     transition: $hover-transition;
   }
 }
