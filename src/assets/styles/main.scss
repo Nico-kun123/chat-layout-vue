@@ -1,0 +1,36 @@
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* Общие стили */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+*,
+*::before,
+*::after {
+  font-family: "Opens Sans", sans-serif;
+  font-weight: normal;
+  line-height: 1.5;
+  box-sizing: border-box;
+  margin: 0;
+}
+:root {
+  font-weight: 400;
+  color-scheme: light dark;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: $ui-color-4;
+  overflow: hidden;
+  transition: color 0.5s, background-color 0.5s;
+}
+
+@media (hover: hover) {
+  a:hover,
+  button:hover {
+    cursor: pointer;
+  }
+}
